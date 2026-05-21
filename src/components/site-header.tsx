@@ -18,21 +18,14 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
-        <Link
-          href="/"
-          className="font-serif text-2xl font-medium tracking-tight text-foreground"
-          onClick={() => setMobileOpen(false)}
-        >
-          Levi
-        </Link>
-
+      <div className="mx-auto flex max-w-6xl items-center justify-end px-6 py-4 sm:px-8">
         {/* Desktop nav */}
         <nav className="hidden items-center gap-8 md:flex">
-          {navItems.slice(1).map((item) => {
+          {navItems.map((item) => {
             const active =
-              pathname === item.href ||
-              (item.href !== "/" && pathname?.startsWith(item.href));
+              item.href === "/"
+                ? pathname === "/"
+                : pathname?.startsWith(item.href);
             return (
               <Link
                 key={item.href}
@@ -86,10 +79,11 @@ export function SiteHeader() {
       {mobileOpen && (
         <nav className="border-t border-border bg-background md:hidden">
           <div className="mx-auto max-w-6xl px-6 py-2 sm:px-8">
-            {navItems.slice(1).map((item) => {
+            {navItems.map((item) => {
               const active =
-                pathname === item.href ||
-                (item.href !== "/" && pathname?.startsWith(item.href));
+                item.href === "/"
+                  ? pathname === "/"
+                  : pathname?.startsWith(item.href);
               return (
                 <Link
                   key={item.href}

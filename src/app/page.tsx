@@ -11,22 +11,25 @@ export default function HomePage() {
           <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-                An open case file
+                Levi · Open case file
               </p>
               <h1 className="mt-5 font-serif text-4xl font-medium leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
-                A boy, not a case.
+                We are publishing
+                <br />
+                our son&apos;s case.
               </h1>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-                This is Levi. He is five years old. He used to talk. He used to
-                play. We are running his case in public because his brain
-                doesn&apos;t have time for us not to.
+                Five years old. Regression starting at 2.5. Sleep-activated
+                encephalopathy (DEE-SWAS) confirmed at Stanford in March 2026
+                — underlying cause unknown. We are publishing every piece of
+                data we have so anyone in the world who can help, can.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   href="/data"
                   className="inline-flex items-center justify-center rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-accent"
                 >
-                  See the data
+                  Open the data vault
                 </Link>
                 <Link
                   href="/bounties"
@@ -55,18 +58,21 @@ export default function HomePage() {
         <Container>
           <div className="prose">
             <p className="text-xl leading-relaxed">
-              This is Levi. He is five years old. He has three brothers — one
-              older, two younger. He loves climbing, the iPad, the slide at the
-              playground, and his family. He used to talk. He used to play. He
-              doesn&apos;t talk anymore, and most of his play has gone away
-              with the words.
+              Levi is five. He has three brothers — one older, two younger. He
+              used to talk in sentences, build with blocks, and answer to his
+              name. He no longer does any of those things. Around his fifth
+              birthday he stopped using words altogether.
             </p>
             <p>
-              He is not a case. He is our son. But because of how rare his
-              situation is, and because the medical system is not built to move
-              at the speed his brain needs us to move, this website also has to
-              function as a case file — one that anyone in the world can read,
-              question, and help with.
+              We are running his case as a structured research effort. This
+              site is the working case file: clinical records, imaging,
+              sequencing, EEG, labs, growth data, behavioral observations —
+              everything we have on him, published in a form that anyone can
+              read, query, and try to help with. The standard medical playbook
+              has not found the underlying cause of what is happening to him.
+              We believe more capable people looking at the right data, faster,
+              is the variable that changes his odds, and we are organizing the
+              site around that belief.
             </p>
 
             <h2>What&apos;s happening</h2>
@@ -110,7 +116,8 @@ export default function HomePage() {
               />
             </div>
             <figcaption className="px-6 sm:px-0">
-              The brain came back online.
+              Within days of the first steroid pulse: eye contact returning,
+              first deliberate use of a fork, renewed interest in his brothers.
             </figcaption>
           </figure>
 
@@ -203,19 +210,20 @@ export default function HomePage() {
 
             <h2>Why this site exists</h2>
             <p>
-              We are doing this in public because Levi&apos;s situation calls
-              for more brains than we can put in a conference room. The world
-              has researchers and clinicians and parents who could, in an
-              afternoon, see something in Levi&apos;s data that we have missed.
-              We want them to be able to see it. This site is where the data
-              lives, where our philosophy of how we&apos;re approaching the
-              case lives, and where the open questions we&apos;d most like
-              outside help on live.
+              Levi&apos;s case requires more capable people looking at the
+              data than we can recruit through normal medical channels.
+              Somewhere right now there is a researcher, clinician, fellow
+              parent, or AI engineer who would, given the data, see something
+              we have missed. We want them to be able to see it. This site is
+              where the data lives, where our methodology lives, and where the
+              specific open questions we want outside help on live.
             </p>
             <p>
-              If you are a researcher, clinician, fellow parent, AI engineer,
-              or just a curious person who wants to look at the data and tell
-              us what you see, you are welcome here.
+              We are not running this as a memorial or a meditation. It is a
+              working research effort with a budget, a backlog, and an
+              explicit theory of how a five-year-old with this biology
+              recovers ground. If you can advance any piece of it, we want
+              to hear from you.
             </p>
           </div>
 

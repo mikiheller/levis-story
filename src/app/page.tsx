@@ -11,18 +11,21 @@ export default function HomePage() {
           <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-                Levi · Open case file
+                Open case file
               </p>
-              <h1 className="mt-5 font-serif text-4xl font-medium leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
-                We are publishing
+              <h1 className="mt-5 font-serif text-4xl font-medium leading-[1.1] tracking-tight text-foreground sm:text-5xl md:text-6xl">
+                Levi is five.
                 <br />
-                our son&apos;s case.
+                He has stopped speaking.
+                <br />
+                Help us find why.
               </h1>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-                Five years old. Regression starting at 2.5. Sleep-activated
-                encephalopathy (DEE-SWAS) confirmed at Stanford in March 2026
-                — underlying cause unknown. We are publishing every piece of
-                data we have so anyone in the world who can help, can.
+                He has been regressing for over two years. An overnight EEG at
+                Stanford in March 2026 confirmed sleep-activated encephalopathy
+                (DEE-SWAS) — but the underlying cause is unknown and every
+                standard test is negative. We are publishing everything we
+                have so anyone in the world who can help, can.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
